@@ -6,7 +6,8 @@ import java.util.Arrays;
 
 public class Transformator {
 
-  public <I, O> O trasform(I input) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+  public <I, O> O trasform(I input) throws ClassNotFoundException, NoSuchMethodException,
+          InvocationTargetException, InstantiationException, IllegalAccessException {
     Class<?> source = input.getClass();
     Class<?> target = Class.forName(source + "DTO");
 
